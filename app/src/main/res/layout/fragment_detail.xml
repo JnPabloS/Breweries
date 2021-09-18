@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     android:orientation="vertical"
     android:padding="8dp"
     tools:context=".ui.DetailFragment">
@@ -11,39 +12,64 @@
         android:id="@+id/name_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textSize="20sp" />
+        android:textAlignment="center"
+        android:textColor="@color/AppColor"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/city_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_marginTop="16dp"
+        android:text="@string/city"
+        android:textColor="@color/AppColor"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/street_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_marginTop="8dp"
+        android:text="@string/street"
+        android:textColor="@color/AppColor"
+        android:textSize="16sp"/>
 
     <TextView
         android:id="@+id/phone_textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_marginTop="8dp"
+        android:text="@string/phone"
+        android:textColor="@color/AppColor"
+        android:textSize="16sp"/>
 
     <TextView
         android:id="@+id/website_textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_marginTop="8dp"
+        android:text="@string/website"
+        android:textColor="@color/AppColor"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/ubication_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/ubication"
+        android:textColor="@color/AppColor"
+        android:textSize="16sp" />
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView2"
-        android:name="com.jnpablos.breweries.ui.MapsFragment"
+        android:id="@+id/ubicat"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="48dp" />
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp" />
 
 </LinearLayout>

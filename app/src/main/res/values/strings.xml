@@ -5,4 +5,12 @@
     <string name="separator">%s - %s</string>
     <string name="name_of_brewery">Name: %s</string>
     <string name="type_of_brewery">Type: %s</string>
+    <string name="ubication">Ubication: %s</string>
+    <string name="website">Website: %s</string>
+    <string name="phone">Phone: %s</string>
+    <string name="street">Street: %s</string>
+    <string name="city">City: %s</string>
+    <string name="name_example">Nombre de la cervecería</string>
+    <string name="type_example">Tipo de cervecería</string>
+    <string name="ubication_example">Ciudad-Estado</string>
 </resources>
