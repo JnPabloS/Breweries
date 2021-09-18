@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.jnpablos.breweries.R
 import com.jnpablos.breweries.databinding.FragmentListBinding
 import com.jnpablos.breweries.model.BreweriesList
 import com.jnpablos.breweries.model.Brewery
@@ -25,7 +24,7 @@ class ListFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
 
         _binding = FragmentListBinding.inflate(inflater, container, false)
 
@@ -56,7 +55,7 @@ class ListFragment : Fragment() {
 
                 override fun onResponse(call: Call<BreweriesList>, response: Response<BreweriesList>) {
                     if (response.isSuccessful){
-                        var listBreweries : MutableList<Brewery> = response.body()?.toMutableList() as MutableList<Brewery>
+                        val listBreweries : MutableList<Brewery> = response.body()?.toMutableList() as MutableList<Brewery>
                         breweriesAdapter.appendItems(listBreweries)
                     }
                 }

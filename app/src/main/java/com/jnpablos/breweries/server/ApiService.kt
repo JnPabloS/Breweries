@@ -15,7 +15,7 @@ interface ApiService {
 
     companion object {
 
-        val urlApi = "https://api.openbrewerydb.org/breweries/"
+        private const val urlApi = "https://api.openbrewerydb.org/breweries/"
 
         fun create() : ApiService {
 
