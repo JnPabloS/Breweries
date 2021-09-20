@@ -62,14 +62,21 @@
         android:textColor="@color/AppColor"
         android:textSize="16sp" />
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/ubicat"
-        android:name="com.google.android.gms.maps.SupportMapFragment"
+    <LinearLayout
+        android:id="@+id/linear_layout_map"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp" />
+        android:orientation="horizontal">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/ubicat"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp" />
+    </LinearLayout>
 
 </LinearLayout>

@@ -48,9 +48,9 @@ class DetailFragment : Fragment() {
 
             nameTextView.text = breweryName
             cityTextView.text = getString(R.string.city, brewery.city + " - " + brewery.state)
-            streetTextView.text = getString(R.string.street, brewery.street ?: "")
-            phoneTextView.text = getString(R.string.phone, brewery.phone ?: "")
-            websiteTextView.text = getString(R.string.website, brewery.websiteUrl ?: "")
+            streetTextView.text = getString(R.string.street, brewery.street ?: "unknown")
+            phoneTextView.text = getString(R.string.phone, brewery.phone ?: "unknown")
+            websiteTextView.text = getString(R.string.website, brewery.websiteUrl ?: "unknown")
             ubicationTextView.text = getString(R.string.ubication, "")
         }
 
@@ -60,6 +60,7 @@ class DetailFragment : Fragment() {
             smf.getMapAsync(callback)
         } else {
             binding.ubicationTextView.text = getString(R.string.ubication, "unknown")
+            binding.linearLayoutMap.visibility = View.INVISIBLE
         }
 
         return root
